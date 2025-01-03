@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+<!DOCTYPE html> 
+
+
+
+{% block title %}Home{% endblock %}
+
+
+
+{% block content %}
+<p></p>
+<font size="+5>"> Welcome to Netlink!</font>  
+
+
+{% if user.is_authenticated %}
+<h2>Hey {{ user.username }}!</h2> 
+
+
+
+<h1> See Links here</h1>
+
+<div class = 'linkcard'>
+  <div class ='linkcontainer'>
+    <a href = '/links'> <h2> Links</h2> </a>
+  </div>
+</div>
+
+
+<p>&nbsp;</p>
+
+<h1>Add Your Own Links</h1>
+
+<div class = 'createcard'>
+  <div class ='createcontainer'>
+    <a href = '/create'> <h2> Create</h2> </a>
+  </div>
+</div>
+
+
+<h3> &nbsp;</h3>
+<h1>Log Out</h1>
+<form action="{% url 'logout' %}" method="post">
+  {% csrf_token %}
+  <button type="submit">Log Out</button>
+</form>
+
+{% else %}
+<h2>You are not logged in</h2>
+<html>
+  <body>
+    <div class ='card'>
+        <div class="container">
+          <a href=" {% url 'login' %}">
+            <h3><b>Log In Here</b></h3>
+          </a>
+            
+
+        </div>
+    </div>
+
+
+<p>&nbsp;</p>
+
+<h2>Create an account!</h2>
+
+<div class = 'accountcard'>
+  <div class ='accountcontainer'>
+    <a href = '{% url "signup" %}'> <h3> Make Account</h3> </a>
+  </div>
+</div>
+{% endif %}
+</html>
+
+{% endblock %}

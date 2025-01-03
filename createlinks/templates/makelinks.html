@@ -1,0 +1,18 @@
+{% extends "baseone.html"%}
+{% block content %}
+<h1>{{user}}</h1>
+<form method ='POST'> {%csrf_token%}
+{{form.as_p}}
+
+<input type="submit" value="Save" />
+
+</form>
+
+<h2>
+    <a href = '{%url "home"%}'> Back Home </a>
+</h2>
+
+
+
+
+{%endblock%}

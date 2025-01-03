@@ -1,0 +1,107 @@
+
+
+
+body {
+    background-color: #e6ebf7;
+    margin: 0;
+    letter-spacing: 0.64px;
+    font: 600 17px 'Source Sans Pro', serif;
+    text-align: center;
+}
+  
+
+.card{
+  color:coral;
+  background-color: #7d9adf;
+  box-shadow: 0 4px 8px 0 rgba(7, 1, 15, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+  width: 300px;
+  margin: auto;
+  
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.container {
+  padding: 2px 16px;
+}
+
+
+.accountcard{
+  color:coral;
+  background-color: #7d9adf;
+  box-shadow: 0 4px 8px 0 rgba(7, 1, 15, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+  width: 300px;
+  margin: auto;
+  
+}
+
+
+.accountcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.accountcontainer {
+  padding: 2px 16px;
+}
+
+
+
+
+.linkcard{
+  color:coral;
+  background-color: #7d9adf;
+  box-shadow: 0 4px 8px 0 rgba(7, 1, 15, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+  margin: auto;
+  width: 300px;
+  height: 80px;
+  
+}
+
+.linkcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.linkcontainer {
+  padding: 2px 16px;
+}
+
+
+.createcard{
+  color:coral;
+  background-color: #7d9adf;
+  box-shadow: 0 4px 8px 0 rgba(7, 1, 15, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; 
+  margin: auto;
+  width: 300px;
+  height: 80px;
+  
+}
+
+.createcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.createcontainer {
+  padding: 2px 16px;
+}
+
+
+
+
+a:visited { text-decoration: none; color:rgb(0, 0, 0); }
+a:hover { text-decoration: none; color:rgb(0, 0, 0); }
+

@@ -1,0 +1,30 @@
+{% extends "basetwo.html" %}
+
+{% block content %}
+
+
+<h1> {{obj.user}}'s Links!</h1>
+<h2>{{obj.biography}}</h2>
+<p>&nbsp;</p>
+
+<h3><a href = https://www.{{obj.linkone}}>{{obj.linkone}} </a></h3>
+<h3> {{obj.defone}}</h3>
+
+
+<h2>&nbsp;</h2>
+
+<h3>{{obj.linktwo}}</h3>
+<h3> {{obj.deftwo}}</h3>
+
+
+<h2>&nbsp;</h2>
+
+<h3>{{obj.linkthree}}</h3>
+<h3> {{obj.defthree}}</h3>
+
+
+<h2>
+    <a href = '/links'> Back to Links </a>
+</h2>
+
+{%endblock%}

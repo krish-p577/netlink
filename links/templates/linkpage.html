@@ -1,0 +1,44 @@
+{% extends "basetwo.html" %}
+
+{% block content %}
+
+<html>
+    <div class="topnav">
+        <a href="{%url 'home' %}"> Home</a>
+        <a class 'active' href = "/links"> Links </a>
+        <a href = '/create'> Create</a>
+      </div>
+      
+<h1>Links Sets By Users!</h1>
+
+<h2>&nbsp;</h2>
+
+
+<P> 
+    {%for i in more%}   
+    <a href = '{{i.id}}'> <h2>Netlink created for: {{i.user }}</h2></a>
+    <p>{{i.biography}}</p>
+    <h1></h1>
+
+    
+    {% endfor %}
+
+</P>
+
+
+
+<div class = 'backcard'>
+    <div class ='backcontainer'>
+      <a href = '{%url "home" %}'> <h2> Create</h2> </a>
+    </div>
+  </div>
+
+<h2>
+    <a href = '{%url "home"%}'> Back Home </a>
+</h2>
+
+
+</body>
+</html>
+
+{%endblock%}
